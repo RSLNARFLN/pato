@@ -122,5 +122,221 @@ header {
   .articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    .art-1 {
+      .img-sec {
+        height: 219px;
+        border-radius: 10px;
+        background: url('../../img/intro-01.jpg') center/cover;
+        background-size: 105%;
+        transition: .5s all ease-in-out;
+
+        &:hover {
+          background-size: 115%;
+          cursor: pointer;
+        }
+      }
+    }
+    .art-2 {
+      .img-sec {
+        height: 219px;
+        border-radius: 10px;
+        background: url('../../img/intro-02.jpg') center/cover;
+        background-size: 105%;
+        transition: .5s all ease-in-out;
+
+        &:hover {
+          background-size: 115%;
+          cursor: pointer;
+        }
+      }
+    }
+    .art-3 {
+      .img-sec {
+        height: 219px;
+        border-radius: 10px;
+        background: url('../../img/intro-04.jpg') center/cover;
+        background-size: 105%;
+        transition: .5s all ease-in-out;
+
+        &:hover {
+          background-size: 115%;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .title {
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        transition: .2s all ease-in-out;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.ourmenu {
+  background-color: $menubg;
+  .top {
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .bot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    gap: 2rem;
+    padding-bottom: 120px;
+    grid-template-areas: 
+    "ln dn ."
+    "ln dn ."
+    "hp hp ."
+    ;
+  }
+
+  div {
+    background-size: 105%;
+    transition: .2s all ease-in-out;
+
+    &:hover {
+      background-size: 115%;
+    }
+  }
+
+  .ln {
+    grid-area: ln;
+    background: url('../../img/our-menu-01.jpg') center/cover;
+    border-radius: 10px;
+    background-size: 105%;
+    transition: .5s all ease-in-out;
+  }
+
+  .dn {
+    grid-area: dn;
+    background: url('../../img/our-menu-05.jpg') center/cover;
+    border-radius: 10px;
+    background-size: 105%;
+    transition: .5s all ease-in-out;
+  }
+
+  .dr {
+    background: url('../../img/our-menu-08.jpg') center/cover;
+    border-radius: 10px;
+    background-size: 105%;
+    transition: .5s all ease-in-out;
+  }
+
+  .strt {
+    background: url('../../img/our-menu-10.jpg') center/cover;
+    border-radius: 10px;
+    background-size: 105%;
+    transition: .5s all ease-in-out;
+  }
+
+  .hp {
+    grid-area: hp;
+    background: url('../../img/our-menu-13.jpg') center/cover;
+    border-radius: 10px;
+    background-size: 105%;
+    transition: .5s all ease-in-out;
+  }
+
+  .ds {
+    background: url('../../img/our-menu-16.jpg') center/cover;
+    border-radius: 10px;
+    background-size: 105%;
+    transition: .5s all ease-in-out;
+  }
+}
+
+.events {
+  background: url('../../img/bg-event-03.jpg') center/cover;
+  .top {
+    text-align: center;
+    padding-top: 60px;
+    .welc {
+      color: white;
+    }
+  }
+
+  .eventcard {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35px 1fr 1fr;
+    grid-template-rows: 390px;
+    padding-bottom: 180px;
+
+    .redband {
+      background: red;
+      text-align: center;
+      writing-mode: vertical-lr;
+      color: white;
+      font-size: 12px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      span {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+
+    .image {
+      background: url('../../img/event-06.jpg') center/cover;
+    }
+
+    .content {
+      background: white;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-align: center;
+
+      h2 {
+        text-transform: uppercase;
+        margin-top: 35px;
+      }
+
+      p {
+        width: 90%;
+        margin: 35px auto;
+      }
+
+      .date {
+        width: 90%;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .number {
+          text-transform: uppercase;
+          font-size: 50px;
+          color: red;
+          font-weight: 900;
+          margin-bottom: 5px;
+        }
+
+        .name {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 700;
+          color: grey;
+        }
+      }
+    }
   }
 }
