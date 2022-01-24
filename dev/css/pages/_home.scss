@@ -274,7 +274,7 @@ header {
   }
 
   .eventcard {
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 35px 1fr 1fr;
@@ -308,7 +308,7 @@ header {
 
       h2 {
         text-transform: uppercase;
-        margin-top: 35px;
+        margin-top: 55px;
       }
 
       p {
@@ -337,6 +337,272 @@ header {
           color: grey;
         }
       }
+    }
+  }
+}
+
+.book {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40vh;
+  align-items: center;
+  margin-bottom: 70px;
+
+  .left {
+    width: 80%;
+    margin: 0 auto;
+
+    .form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+
+      & * {
+        margin: 5px;
+      }
+
+      input {
+        height: 2.5rem;
+        width: 95%;
+        border-radius: 5px;
+        border: 2px rgba(128, 128, 128, 0.472) solid;
+        
+        &::placeholder {
+          font-size: 14px;
+        }
+
+        &:focus {
+          border: rgba(255, 0, 0, 0.938);
+        }
+      }
+
+      select {
+        height: 2.9rem;
+        width: 95%;
+        border-radius: 5px;
+        border: 2px rgba(128, 128, 128, 0.472) solid;
+
+        &:focus {
+          border-color: red;
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 390px;
+    height: 390px;
+    display: block;
+    margin: 0 auto;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      margin: 40px auto;
+      background: url('../../img/booking-01.jpg') center/cover;
+      border-radius: 10px;
+      background-size: 100%;
+      transition: .5s all ease-in-out;
+
+      &:hover {
+        background-size: 110%;
+      }
+    }
+  }
+}
+
+.customers {
+  background: $menubg;
+  .top {
+    text-align: center;
+    padding-top: 70px;
+    // padding-bottom: 20px;
+  }
+  .portrait {
+    text-align: center;
+    background: url('../../img/avatar-01.jpg') center/cover;
+    width: 100px;
+    height: 100px;
+    border: 5px red solid;
+    border-radius: 100%;
+    margin: 20px auto;
+  }
+
+  .text {
+    text-align: center;
+    padding-bottom: 170px;
+  }
+}
+
+.video {
+  height: 50vh;
+  background: url('../../img/header-menu-01.jpg') center/cover fixed;
+
+  .tit {
+    text-align: center;
+    top: 30%;
+    position: relative;
+    .welc {
+      color: white;
+    }
+  }
+
+  .play {
+    text-align: center;
+    top: 35%;
+    position: relative;
+    a {
+      background: white;
+      padding: 10px;
+      border-radius: 100%;
+      font-size: 32px;
+      transition: .5s all ease-in-out;
+
+      &:hover {
+        background: red;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.threeart2 {
+
+  .theblog {
+    text-align: center;
+    margin-top: 75px;
+  }
+
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    .art-1 {
+      .img-sec {
+        height: 219px;
+        border-radius: 10px;
+        background: url('../../img/blog-01.jpg') center/cover;
+        background-size: 105%;
+        transition: .5s all ease-in-out;
+
+        &:hover {
+          background-size: 115%;
+          cursor: pointer;
+        }
+      }
+    }
+    .art-2 {
+      .img-sec {
+        height: 219px;
+        border-radius: 10px;
+        background: url('../../img/blog-02.jpg') center/cover;
+        background-size: 105%;
+        transition: .5s all ease-in-out;
+
+        &:hover {
+          background-size: 115%;
+          cursor: pointer;
+        }
+      }
+    }
+    .art-3 {
+      .img-sec {
+        height: 219px;
+        border-radius: 10px;
+        background: url('../../img/blog-03.jpg') center/cover;
+        background-size: 105%;
+        transition: .5s all ease-in-out;
+
+        &:hover {
+          background-size: 115%;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .title {
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        transition: .2s all ease-in-out;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.signup {
+  height: 15vh;
+  background: $menubg;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  div {
+    margin: 1rem;
+  }
+
+  .specials {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+
+  .btn-dark {
+    margin: 0;
+  }
+
+  input {
+    height: 2.5rem;
+    width: 95%;
+    border-radius: 5px;
+    border: 2px rgba(128, 128, 128, 0.472) solid;
+    
+    &::placeholder {
+      font-size: 14px;
+    }
+
+    &:focus {
+      border: rgba(255, 0, 0, 0.938);
+    }
+  }
+}
+
+footer {
+  .part1 {
+    background: $foot1;
+    color: white;
+
+    .part1wrapped {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  .finalfooter {
+    background: $foot2;
+    color: grey;
+
+    .part2wrapped {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      gap: 1rem;
     }
   }
 }

@@ -201,7 +201,7 @@
 </section>
 
 <!-- BOOK TABLE RESERVATION -->
-<section class="book">
+<section class="book wrapper">
   <div class="left">
     <div class="title">
       <h2 class="italian">
@@ -221,7 +221,7 @@
         <input type="text" name="name" id="name" placeholder="Name">
       </div>
       <div class="time">
-        <label for="time">Time</label>
+        <label for="time">Time</label> <br>
         <select name="time" id="time">
           <option value="9:00">9:00</option>
           <option value="10:00">10:00</option>
@@ -230,11 +230,11 @@
         </select>
       </div>
       <div class="phone">
-        <label for="phone">Phone</label>
+        <label for="phone">Phone</label> 
         <input type="text" name="phone" id="phone" placeholder="Phone">
       </div>
       <div class="people">
-        <label for="people">People</label>
+        <label for="people">People</label> <br>
         <select name="people" id="people">
           <option value="1 person">1 person</option>
           <option value="2 people">2 people</option>
@@ -247,10 +247,13 @@
         <input type="text" name="email" id="email" placeholder="Email">
       </div>
     </div>
+    <div class="btnned">
+      <a href="#" class="btn-dark">Book table</a>
+    </div>
   </div>
   <div class="right">
     <div class="image">
-      <img src="img/our-menu-01.jpg" alt="Food">
+      <!-- <img src="img/our-menu-01.jpg" alt="Food"> -->
     </div>
   </div>
 </section>
@@ -265,7 +268,7 @@
       REVIEW
     </h2>
   </div>
-  <div class="custom">
+  <div class="custom wrapper">
     <div class="portrait">
 
     </div>
@@ -293,17 +296,25 @@
       OUR VIDEO
     </h2>
   </div>
-  <div>
-    ▶️
+  <div class="play">
+    <a href="#">▶️</a>
   </div>
 </section>
 
 <!-- LATEST NEWS THE BLOG -->
-<section class="threeart">
+<section class="threeart2 wrapper">
+  <div class="theblog">
+    <h2 class="italian">
+      Latest News
+    </h2>
+    <h2 class="welc">
+      THE BLOG
+    </h2>
+  </div>
   <div class="articles">
-    <article>
+    <article class="art-1">
       <div class="img-sec">
-        <a href="#"><img src="img/blog-01.jpg" alt="Intro"></a>
+        <!-- <a href="#"><img src="img/blog-01.jpg" alt="Intro"></a> -->
       </div>
       <div class="title">
         <a href="#">Best Places for Wine</a>
@@ -318,9 +329,9 @@
       </div>
     </article>
 
-    <article>
+    <article class="art-2">
       <div class="img-sec">
-        <a href="#"><img src="img/blog-02.jpg" alt="Intro"></a>
+        <!-- <a href="#"><img src="img/blog-02.jpg" alt="Intro"></a> -->
       </div>
       <div class="title">
         <a href="#">Eggs and Cheese</a>
@@ -335,9 +346,9 @@
       </div>
     </article>
 
-    <article>
+    <article class="art-3">
       <div class="img-sec">
-        <a href="#"><img src="img/blog-03.jpg" alt="Intro"></a>
+        <!-- <a href="#"><img src="img/blog-03.jpg" alt="Intro"></a> -->
       </div>
       <div class="title">
         <a href="#">Style the Wedding Party</a>
@@ -363,13 +374,67 @@
     <input type="text" name="email" id="email" placeholder="Email Address">
   </div>
   <div class="button">
-    <a href="#" class="end-btn">Sign-Up</a>
+    <a href="#" class="btn-dark">Sign-Up</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
+  <section class="part1">
+    <div class="part1wrapped wrapper">
+      <div class="contact">
+        <div class="cont">
+          <h2>Contact Us</h2>
+          <span> 8th floor, 379 Hudson St, New York, NY 10018</span>
+          <span> (+1) 96 716 6879</span>
+          <span> contact@site.com</span>
+        </div>
+        <div class="opentime">
+          <h2>OPENING TIMES</h2>
+          <span>09:30 AM – 11:00 PM</span>
+          <span>Every Day</span>
+        </div>
+      </div>
+      <div class="latest">
+        <h2>LATEST TWITTER</h2>
+        <div class="tweet">
+          <a href="#">@colorlib</a>
+          <p>Activello is a good option. It has a slider built into that displays the featured image in the slider. https://buff.ly/2zaSfAQ</p>
+          <span>21 Dec 2017</span>
+        </div>
+        <div class="tweet">
+          <a href="#">@colorlib</a>
+          <p>Activello is a good option. It has a slider built into that displays https://buff.ly/2zaSfAQ</p>
+          <span>21 Dec 2017</span>
+        </div>
+      </div>
+      <div class="gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+  <section class="finalfooter">
+    <div class="part2wrapped wrapper">
+      <div class="socials">
 
+      </div>
+      <div class="copyright">
+        Copyright © 2018 All rights reserved | This template is made with love by Colorlib
+      </div>
+    </div>
+    
+  </section>
 </footer>
 <!-- FINAL FOOTER -->
 <script src="js/main.min.js"></script>
