@@ -103,5 +103,20 @@ body.contact {
       font-size: 13px;
       color: gray;
     }
+
+    .templ {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      grid-template-areas: 
+      "lg ."
+      "lg ."
+      ;
+      img {
+        grid-area: lg;
+        // justify-self: center;
+        padding-top: 25px;
+      }
+
+    }
   }
 }
