@@ -89,3 +89,37 @@ html {
     width: 99%;
   }
 }
+
+aside {
+  opacity: 0;
+  padding-top: 75px;
+  position: fixed;
+  z-index: 2;
+  width: 300px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.90);
+  top: 0%;
+  right: 0%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 40px);
+  justify-items: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+    transition: .3s all ease-in-out;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .btn-dark {
+    align-self: start;
+  }
+
+  .gallery {
+    margin-top: 50px;
+  }
+}
