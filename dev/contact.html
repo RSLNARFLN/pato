@@ -35,30 +35,44 @@
 
 <!-- MAIN -->
 <main>
-  <!-- MAP -->
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10355.491365100048!2d6.3672156!3d49.543552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b9b3f0f0d6fe73c!2sChez%20Pato%20S%C3%A0rl!5e0!3m2!1sfr!2sbe!4v1643107550418!5m2!1sfr!2sbe" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- MAP --> 
+  <div class="map wrapper">
+    <div class="mappy">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10355.491365100048!2d6.3672156!3d49.543552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b9b3f0f0d6fe73c!2sChez%20Pato%20S%C3%A0rl!5e0!3m2!1sfr!2sbe!4v1643107550418!5m2!1sfr!2sbe" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
   </div>
   <!-- SEND US A MESSAGE -->
-  <div class="message">
+  <div class="message wrapper">
     <h2>SEND US A MESSAGE</h2>
     <div class="form">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Name">
-      <label for="email">Email</label>
-      <input type="text" name="email" id="email" placeholder="Email">
-      <label for="phone">Phone</label>
-      <input type="text" name="phone" id="phone" placeholder="Phone">
-      <label for="msg">Message</label>
-      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Email">
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" placeholder="Phone">
+      </div>
+      <div class="field msg">
+        <label for="msg">Message</label>
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+      </div>
     </div>
-    <a href="#" class="btn-dark">Submit</a>
+    <div class="submit">
+      <a href="#" class="btn-dark">Submit</a>
+    </div>
+    
   </div>
   <!-- LOCATION -->
-  <div class="location">
+  <div class="location wrapper">
     <div class="loc">
       <h2>Location</h2>
-      <span>8th floor, 379 Hudson St, New York, NY 10018</span>
+      <span>8th floor, 379 Hudson St, <br> New York, NY 10018</span>
     </div>
     <div class="call">
       <h2>Call us</h2>

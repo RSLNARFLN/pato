@@ -1,4 +1,6 @@
 body.contact {
+  background: $contactbg;
+
   header {
     height: 40vh;
     background: url('../../img/master-slides-01.jpg') center/cover;
@@ -11,6 +13,95 @@ body.contact {
       letter-spacing: 10px;
       word-spacing: 10px;
       align-self: center;
+    }
+  }
+
+  .map {
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+    .mappy {
+      margin: 0 auto;
+      width: 1000px;
+      border: 5px white solid;
+      border-radius: 10px;
+    }
+  }
+
+  .message {
+    h2 {
+      text-align: center;
+    }
+
+    .submit {
+      width: 100px;
+      margin: 25px auto;
+    }
+
+    .form {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      grid-template-areas: 
+      ". . ."
+      "ms ms ms"
+      "ms ms ms"
+      "ms ms ms"
+      ;
+
+      .field {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+
+        input {
+          height: 2.5rem;
+          // width: 95%;
+          border-radius: 5px;
+          border: 2px rgba(128, 128, 128, 0.472) solid;
+          
+          &::placeholder {
+            font-size: 14px;
+          }
+  
+          &:focus {
+            border: rgba(255, 0, 0, 0.938);
+          }
+        }
+      }
+
+      .msg {
+        grid-area: ms;
+        textarea {
+          // width: 95%;
+          border-radius: 5px;
+          border: 2px rgba(128, 128, 128, 0.472) solid;
+          
+          &::placeholder {
+            font-size: 14px;
+          }
+  
+          &:focus {
+            border: rgba(255, 0, 0, 0.938);
+          }
+        }
+      }
+    }
+  }
+
+  .location {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 100px 0;
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    span {
+      font-size: 13px;
+      color: gray;
     }
   }
 }
