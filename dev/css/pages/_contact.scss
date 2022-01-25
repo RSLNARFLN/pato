@@ -1,0 +1,16 @@
+body.contact {
+  header {
+    height: 40vh;
+    background: url('../../img/master-slides-01.jpg') center/cover;
+
+    .patoplace {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 50px;
+      margin-top: 0;
+      letter-spacing: 10px;
+      word-spacing: 10px;
+      align-self: center;
+    }
+  }
+}
