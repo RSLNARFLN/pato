@@ -91,7 +91,7 @@ html {
 }
 
 aside {
-  opacity: 0;
+  opacity: 1;
   padding-top: 75px;
   position: fixed;
   z-index: 2;
@@ -99,11 +99,12 @@ aside {
   height: 100vh;
   background: rgba(255, 255, 255, 0.90);
   top: 0%;
-  right: 0%;
+  right: -100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 40px);
+  grid-template-rows: repeat(9, 40px);
   justify-items: center;
+  transition: .3s all ease-in-out;
 
   a {
     text-decoration: none;
@@ -121,5 +122,34 @@ aside {
 
   .gallery {
     margin-top: 50px;
+    text-align: center;
+    .gally {
+      display: grid;
+      grid-template-columns: repeat(3, 60px);
+      grid-template-rows: repeat(3, 60px);
+      gap: 0.5rem;
+
+      div {
+        background: url('../../img/photo-gallery-03.jpg') center/cover;
+      }
+    }
   }
+
+
+  .exit {
+    justify-self: end;
+    margin-right: 40px;
+    font-size: 30px;
+    color: black;
+    transition: .2s all ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+}
+
+aside.active {
+  right: 0%;
 }

@@ -6,7 +6,7 @@ body {
     background: rgba(255, 255, 255, 0.89);
     height: 95px;
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
     align-items: center;
 
@@ -20,6 +20,19 @@ body {
 
       &:hover {
         color: red;
+      }
+    }
+
+    @include laptop {
+      a {
+        margin: 0;
+      }
+    }
+    @include tablet {
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      .hide {
+        display: none;
       }
     }
   }
@@ -47,6 +60,7 @@ header {
       margin-top: 0;
       letter-spacing: 10px;
       word-spacing: 10px;
+      text-align: center;
     }
 
     .btn {
@@ -76,6 +90,15 @@ header {
   align-items: center;
   margin-bottom: 70px;
 
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    .left {
+      padding-top: 70px;
+    }
+  }
+
   .left {
     width: 80%;
     margin: 0 auto;
@@ -98,6 +121,11 @@ header {
 
       &:hover {
         background-size: 110%;
+      }
+
+      @include tablet {
+        width: 300px;
+        height: 300px;
       }
     }
   }
@@ -125,6 +153,11 @@ header {
     gap: 2rem;
     margin-top: 80px;
     margin-bottom: 100px;
+
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
 
     .art-1 {
       .img-sec {
@@ -206,6 +239,21 @@ header {
     "ln dn ."
     "hp hp ."
     ;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 130px);
+      grid-template-areas: 
+      "ln"
+      "ln"
+      "dn"
+      "dn"
+      "."
+      "."
+      "."
+      "hp"
+      ;
+    }
   }
 
   div {
@@ -281,6 +329,8 @@ header {
     grid-template-rows: 390px;
     padding-bottom: 180px;
 
+    
+
     .redband {
       background: red;
       text-align: center;
@@ -338,6 +388,23 @@ header {
         }
       }
     }
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr 1fr;
+
+      .redband {
+        writing-mode: horizontal-tb;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        margin-top: 10px;
+        margin-left: 0;
+      }
+
+      .content {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+      }
+    }
   }
 }
 
@@ -348,6 +415,10 @@ header {
   grid-template-rows: 40vh;
   align-items: center;
   margin-bottom: 70px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 
   .left {
     width: 80%;
@@ -481,6 +552,10 @@ header {
     margin-top: 80px;
     margin-bottom: 100px;
 
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
     .art-1 {
       .img-sec {
         height: 219px;
@@ -595,6 +670,11 @@ footer {
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
 
+      @include mobile {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
       h2 {
         text-transform: uppercase;
         font-size: 18px;
@@ -629,7 +709,7 @@ footer {
       grid-template-columns: repeat(4, 80px);
       grid-template-rows: repeat(3, 80px);
       gap: 1rem;
-
+      justify-content: center;
       .gal {
         background: url('../../img/photo-gallery-01.jpg') center/cover;
       }
@@ -647,6 +727,26 @@ footer {
       grid-template-columns: 30% 1fr;
       gap: 1rem;
       justify-items: end;
+    }
+  }
+}
+
+.burgerbtn {
+  width: 30px;
+  height: 30px;
+  div {
+    border-top: 2px black solid;
+    margin-top: 2px;
+    height: 10px;
+    width: 25px;
+    transition: .2s all ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    div {
+      border-top: 2px red solid;
     }
   }
 }
